@@ -1,18 +1,17 @@
-# Game Name
+# Rollins Extravaganza
 
-## Group Name: [Group Name Here]
-
+## Group Name: Erin and the Latinos 
 
 ### Team Members:
 
 **Team Lead:**  
-- [Name]
+- Erin Leigh
 
 **Programmer(s):**  
-- [Name]
+- Brandon Shortrede
 
 **Artist(s):**  
-- [Name]
+- Andres Rodriguez
 
 ---
 
@@ -21,12 +20,3 @@
 [Short description of the game.]
 
 ---
-
-
-## License
-
-[License under which this game is distributed.]
-
----
-
-
