@@ -25,7 +25,7 @@
 
 ## License
 
-[Information about the license under which this game is distributed.]
+[License under which this game is distributed.]
 
 ---
 
