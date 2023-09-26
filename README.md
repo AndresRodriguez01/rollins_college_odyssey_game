@@ -1,5 +1,7 @@
 # Rollins College Odyssey!
 
+![Rollins College](https://cdn.sanity.io/images/qe2ul2l0/production/af08136bb8687e7ffe3e63fa4968f629ece0d93c-2000x1332.jpg?rect=554,349,1302,867&w=1920&h=1279&q=70&fit=max&auto=format) 
+
 ## Group Name: Erin and the Latinos 
 
 ### Team Members:
