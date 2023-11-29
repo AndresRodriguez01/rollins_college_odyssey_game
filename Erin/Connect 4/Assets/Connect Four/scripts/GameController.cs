@@ -1,25 +1,34 @@
 ﻿using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
+using UnityEngine.SceneManagement;
 
 namespace ConnectFour
 {
 	public class GameController : MonoBehaviour 
 	{
+		// SET PIECE TO NUMBER TO SEE WHO IS THERE
 		enum Piece
 		{
 			Empty = 0,
 			Blue = 1,
+			// RED = YELLOW -> COMPUTER
 			Red = 2
 		}
+
+		// BOARD - how big it should be (range)
 
 		[Range(3, 8)]
 		public int numRows = 6;
 		[Range(3, 8)]
 		public int numColumns = 7;
 
+		// HOW TO WIN
+
 		[Tooltip("How many pieces have to be connected to win.")]
 		public int numPiecesToWin = 4;
+
+		// DIAGONAL YES
 
 		[Tooltip("Allow diagonally connected Pieces?")]
 		public bool allowDiagonally = true;
@@ -71,7 +80,7 @@ namespace ConnectFour
 				numPiecesToWin = max;
 
 			CreateField ();
-
+		
 			isPlayersTurn = System.Convert.ToBoolean(Random.Range (0, 1));
 
 			btnPlayAgainOrigColor = btnPlayAgain.GetComponent<Renderer>().material.color;
@@ -80,6 +89,8 @@ namespace ConnectFour
 		/// <summary>
 		/// Creates the field.
 		/// </summary>
+
+		// MAKING THE BOARD 
 		void CreateField()
 		{
 			winningText.SetActive(false);
@@ -95,6 +106,8 @@ namespace ConnectFour
 			gameObjectField = new GameObject("Field");
 
 			// create an empty field and instantiate the cells
+
+			// PUT ALL THE EMPTY PIECES IN THE SPOTS
 			field = new int[numColumns, numRows];
 			for(int x = 0; x < numColumns; x++)
 			{
@@ -127,7 +140,8 @@ namespace ConnectFour
 		GameObject SpawnPiece()
 		{
 			Vector3 spawnPos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-					
+
+				// COMPUTER GOES IN A RANDOM LOCATION OF THE POSSIBLE MOVES
 			if(!isPlayersTurn)
 			{
 				List<int> moves = GetPossibleMoves();
@@ -141,6 +155,7 @@ namespace ConnectFour
 			}
 
 			GameObject g = Instantiate(
+				// PLAYER/BLUE = YOU , COMPUTER/RED = SPAWN
 					isPlayersTurn ? pieceBlue : pieceRed, // is players turn = spawn blue, else spawn red
 					new Vector3(
 					Mathf.Clamp(spawnPos.x, 0, numColumns-1), 
@@ -165,7 +180,8 @@ namespace ConnectFour
 					btnPlayAgainTouching = true;
 					
 					//CreateField();
-					Application.LoadLevel(0);
+					//Application.LoadLevel(0);
+					SceneManager.LoadScene("StartPage");
 				}
 			}
 			else
@@ -277,12 +293,15 @@ namespace ConnectFour
 			startPosition = new Vector3(x, startPosition.y, startPosition.z);
 
 			// is there a free cell in the selected column?
+			// WHEN UPDATING TO FIND FREE CELL TO DROP PIECE 
+
 			bool foundFreeCell = false;
 			for(int i = numRows-1; i >= 0; i--)
 			{
 				if(field[x, i] == 0)
 				{
 					foundFreeCell = true;
+					// COMPUTER GETS TO GO IF IT IS NOT PLAYERS TURN
 					field[x, i] = isPlayersTurn ? (int)Piece.Blue : (int)Piece.Red;
 					endPosition = new Vector3(x, i * -1, startPosition.z);
 
