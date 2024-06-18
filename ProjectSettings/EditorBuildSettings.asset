@@ -1,0 +1,41 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1045 &1
+EditorBuildSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/MainMenuScene.unity
+    guid: a2535e78ab22afc43b32eda71848f8d8
+  - enabled: 1
+    path: Assets/Scenes/MapScene.unity
+    guid: 1064aca703d91af4085a14892297bdfe
+  - enabled: 1
+    path: Assets/Scenes/IntroScene.unity
+    guid: d25b53425973a714ea7091796d800668
+  - enabled: 1
+    path: Assets/Scenes/GameScene.unity
+    guid: 2cda990e2423bbf4892e6590ba056729
+  - enabled: 1
+    path: Assets/Scenes/ResultScene.unity
+    guid: 3fc9a052c5c606943bba33edcaf49940
+  - enabled: 1
+    path: Assets/Connect Four/scenes/StartPage.unity
+    guid: 3cb7c2e02c4cf402b92010045f3943c9
+  - enabled: 1
+    path: Assets/Connect Four/scenes/HowToPlay.unity
+    guid: a0d1c5d9fae874d45914b88cd3ed17cd
+  - enabled: 1
+    path: Assets/Connect Four/scenes/game.unity
+    guid: 597ec1fce0a578f45bdff75cc5cf89e3
+  - enabled: 1
+    path: Assets/tennis/Scenes/StartPageTenis.unity
+    guid: 38499d617b45e4d4787fef0678e71068
+  - enabled: 1
+    path: Assets/tennis/Scenes/SampleScene.unity
+    guid: 9985497cc4c8b3849aba0b58bab67e4d
+  - enabled: 1
+    path: Assets/tennis/Scenes/HowToPlayTennis.unity
+    guid: 3a3df6f72b27ef14090158ec7c60c1a6
+  m_configObjects: {}
