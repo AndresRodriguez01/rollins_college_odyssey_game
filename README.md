@@ -21,33 +21,34 @@ Engage with each mini-game and strive to become the ultimate Rollins champion by
 - **Brandon Shortrede**: Created the **Tennis** game.
 - **Andres Rodriguez**: Designed the **Race** game and was responsible for merging the entire game, including creating the **Main Menu** and **Main Map** for game selection.
 
-## How to Run the Game
+## How to Download and Play
 
-1. **Install Unity**:
-   - Ensure that you have Unity Hub and Unity Editor installed on your computer. You can download them from [Unity's official website](https://unity.com).
+1. **Download the Project**:
+   - Click the `Code` button and select `Download ZIP` to download the project.
+   - Alternatively, clone the repository using Git.
 
-2. **Clone the Repository**:
-   - Open a terminal or command prompt and run the following command to clone the repository:
-     ```bash
-     git clone https://github.com/AndresRodriguez01/rollins_college_odyssey_game.git
-     ```
+2. **Open the Project in Unity**:
+   - Extract the ZIP file (if downloaded).
+   - Open Unity Hub and click `Open`.
+   - Select the extracted project folder to add it to Unity Hub.
+   - Open the project in Unity.
 
-3. **Open the Project in Unity**:
-   - Open Unity Hub.
-   - Click on the `Open` button and navigate to the folder where you cloned the repository.
-   - Select the project folder to open it in Unity.
-
-4. **Build the Game**:
+3. **Build the Game**:
    - Once the project is open in Unity, go to `File` > `Build Settings`.
    - Ensure your target platform (e.g., Windows, MacOS, etc.) is selected.
    - Click `Build` and choose a location to save the built game.
 
-5. **Run the Game**:
+4. **Run the Game**:
    - Navigate to the folder where you built the game.
    - Run the executable file (e.g., `.exe` for Windows, `.app` for MacOS) to start the game.
    - Follow the on-screen instructions to play.
 
 Enjoy your journey through Rollins College Odyssey and master all the mini-games!
+
+## Requirements
+
+- Unity Hub and Unity Editor installed.
+- Sufficient system resources to run Unity and the game.
 
 ## Credits
 
